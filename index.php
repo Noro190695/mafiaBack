@@ -1,2 +1,2 @@
 <?php
-echo 111;
+header("Location: public/index.php");
