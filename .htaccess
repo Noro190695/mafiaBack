@@ -1,4 +1,4 @@
     RewriteEngine on
-    RewriteBase /server
-    RewriteRule ^(.*)$ public/index.php$1 [L]
+    RewriteBase /server/public
+    RewriteRule ^(.*)$ index.php$1 [L]
 
