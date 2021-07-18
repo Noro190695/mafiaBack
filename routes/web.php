@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Room;
 use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
-Route::get('/doc', function () {
+Route::get('/', function () {
     return view('index');
 });
 
