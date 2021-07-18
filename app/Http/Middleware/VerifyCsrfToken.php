@@ -12,8 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'https://api.bewedoc.ru/api/room/add',
-        'https://api.bewedoc.ru/api/roole/add',
-        'https://api.bewedoc.ru/api/gamer/add'
+        'https://api.bewedoc.ru/v1/room/add',
+        'https://api.bewedoc.ru/v1/roole/add',
+        'https://api.bewedoc.ru/v1/gamer/add'
     ];
 }

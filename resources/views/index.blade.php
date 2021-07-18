@@ -11,11 +11,11 @@
     <ul>
         <li>
             <h2>Получить список комнатей - method: GET</h2>
-            <span>https://api.bewedoc.ru/api/room</span>
+            <span>https://api.bewedoc.ru/v1/room</span>
 
         <li>
             <h2>Добовлять комнат - method: POST</h2>
-            <span>https://api.bewedoc.ru/api/room/add</span>
+            <span>https://api.bewedoc.ru/v1/room/add</span>
             <br>
             <br>
             <pre> <strong>Пример:</strong>{
@@ -31,10 +31,10 @@
         </li>
 
         <h2>Получить список рольей - method: GET</h2>
-        <span>https://api.bewedoc.ru/api/roole</span>
+        <span>https://api.bewedoc.ru/v1/roole</span>
         <li>
             <h2>Добовлять роль - method: POST</h2>
-            <span>https://api.bewedoc.ru/api/roole/add</span>
+            <span>https://api.bewedoc.ru/v1/roole/add</span>
             <br>
             <br>
             <pre> <strong>Пример:</strong>   {
