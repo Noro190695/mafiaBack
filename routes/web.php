@@ -5,6 +5,7 @@ use App\Http\Controllers\Room;
 use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
 Route::get('/', function () {
+    echo  11111;
     return view('index');
 });
 
