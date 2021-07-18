@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Room;
 use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
+Route::get('/', function () {
+    return view('index');
+});
 
 Route::group(['prefix' => 'api'], function () {
     Route::group(['prefix' => 'room'], function () {
