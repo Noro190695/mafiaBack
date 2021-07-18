@@ -6,12 +6,12 @@ use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
 
 
-Route::group(['prefix' => 'api'], function () {
-    Route::get('/', function () {
-        echo  11111;
-        return view('index');
-    });
+Route::get('/', function () {
 
+    return view('index');
+});
+
+Route::group(['prefix' => 'api'], function () {
     Route::group(['prefix' => 'room'], function () {
         Route::get('/', [Room::class, 'index']);
         Route::post('/add', [Room::class, 'create']);
