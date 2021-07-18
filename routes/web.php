@@ -6,16 +6,16 @@ use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
 use App\Http\Controllers\Index;
 
-Route::group(['prefix' => 'api'], function () {
-    Route::group(['prefix' => 'room'], function () {
+Route::prefix('api')->group(function () {
+    Route::prefix('room')->group(function () {
         Route::get('/', [Room::class, 'index']);
         Route::post('/add', [Room::class, 'create']);
     });
-    Route::group(['prefix' => 'roole'], function () {
+    Route::prefix('roole')->group(function () {
         Route::get('/', [Roole::class, 'index']);
         Route::post('/add', [Roole::class, 'create']);
     });
-    Route::group(['prefix' => 'gammer'], function () {
+    Route::prefix('gamer')->group(function () {
         Route::get('/', [Gamer::class, 'index']);
         Route::get('/add', [Gamer::class, 'create']);
     });
