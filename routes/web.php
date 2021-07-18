@@ -5,8 +5,9 @@ use App\Http\Controllers\Room;
 use App\Http\Controllers\Gamer;
 use App\Http\Controllers\Roole;
 use App\Http\Controllers\Index;
-Route::get('/', [Index::class, 'index']);
+
 Route::prefix('api')->group(function () {
+    Route::get('/', [Index::class, 'index']);
     Route::prefix('room')->group(function () {
         Route::get('/', [Room::class, 'index']);
         Route::post('/add', [Room::class, 'create']);
