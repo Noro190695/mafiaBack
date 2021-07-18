@@ -7,6 +7,11 @@ use App\Http\Controllers\Roole;
 
 
 Route::group(['prefix' => 'api'], function () {
+    Route::get('/', function () {
+        echo  11111;
+        return view('index');
+    });
+
     Route::group(['prefix' => 'room'], function () {
         Route::get('/', [Room::class, 'index']);
         Route::post('/add', [Room::class, 'create']);
@@ -19,8 +24,4 @@ Route::group(['prefix' => 'api'], function () {
         Route::get('/', [Gamer::class, 'index']);
         Route::get('/add', [Gamer::class, 'create']);
     });
-});
-Route::get('/', function () {
-    echo  11111;
-    return view('index');
 });
